@@ -1,0 +1,57 @@
+:root {
+    --light-gray: #999;
+
+    --error-red: #ef4444;
+    --success-green: #22c55e;
+    --sky-blue: #0ea5e9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.input {
+    border: 1px solid var(--light-gray);
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.input:focus {
+    border: 1px solid var(--sky-blue);
+    box-shadow: 0 0 5px 1px var(--sky-blue);
+}
+
+.input.success {
+    border-color: var(--success-green);
+}
+
+.input.success:focus {
+    border-color: var(--success-green);
+    box-shadow: 0 0 5px 1px var(--success-green);
+}
+
+.input.error {
+    border-color: var(--error-red);
+}
+
+.input.error:focus {
+    border-color: var(--error-red);
+    box-shadow: 0 0 5px 1px var(--error-red);
+}
+
+.input.large {
+    font-size: 1.25rem;
+}
+
+.input.small {
+    font-size: 0.5rem;
+}
+
+.input:disabled {
+    border: 1px solid var(--light-gray);
+    box-shadow: none;
+    cursor: default;
+}
